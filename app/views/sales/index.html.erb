@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sales</h1>
+
+  <div>
+    <h2> Monto últimos 12 meses</h2>
+    <%= column_chart @last_12_months_amount %>
+  </div>
+
+  <div>
+    <h2> Cantidad ventas últimos 12 meses</h2>
+    <%= column_chart @last_12_months_amount_count %>
+  </div>
+
+  <div>
+    <h2> Promedio ventas últimos 12 meses</h2>
+    <%= column_chart @average_sales_last_12_month %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según origen de los últimos 12 meses</h2>
+    <%= pie_chart @last_sales_12_month_origin_count %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según origen de los últimos 6 meses</h2>
+    <%= pie_chart @last_sales_6_month_origin_count %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según origen de los últimos 3 meses</h2>
+    <%= pie_chart @last_sales_3_month_origin_count %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según origen del último mes</h2>
+    <%= pie_chart @last_sales_1_month_origin_count %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según blend de los últimos 12 meses</h2>
+    <%= pie_chart @last_sales_12_month_blend_count %>
+  </div>
+
+  <div>
+   <h2> Cantidad de ventas según blend de los últimos 6 meses</h2>
+   <%= pie_chart @last_sales_6_month_blend_count %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según blend de los últimos 3 meses</h2>
+    <%= pie_chart @last_sales_3_month_blend_count %>
+  </div>
+
+  <div>
+    <h2> Cantidad de ventas según blend del último mes</h2>
+    <%= pie_chart @last_sales_1_month_blend_count %>
+  </div>
+
+<br>
